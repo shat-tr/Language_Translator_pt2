@@ -1,0 +1,193 @@
+/* styles.css */
+body {
+    font-family: 'Georgia', Times, serif;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    background-image: url("C:/Users/rohit/Desktop/lang_trans_pt2/bg_img.png"); /* Image file in the same folder */
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* No repeating */
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+#speechToTextButton i {
+    font-size: 20px;
+}
+
+.container {
+    width: auto;
+    max-width: 700px;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 8px;
+}
+title{
+    color: #ffffff;
+    text-align: center;
+    font-size: 75px;
+    margin-bottom: 150px;
+    margin-top: -100px;
+}
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 200px;
+}
+
+h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 100px;
+    margin-top: -190px;
+}
+
+h3{
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+}
+
+h2, select, textarea, button, pre {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#manualText{
+    max-width: 350px;
+}
+/* Center the language select dropdown */
+#targetLanguage, #inputLanguage, #translatedText, #fileInput, pre {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #2e2e2e7d;
+}
+
+/* Input text area for manual text */
+textarea {
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #2e2e2e7d;
+    border-radius: 5px;
+    text-align: center;
+}
+/* Buttons */
+button{
+    display: flex;
+    margin: auto auto;
+    padding: 20px 10px;
+    background-color: #2e2e2e7d;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #727272;
+}
+
+/* Text display areas */
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 10px;
+    background-color: #2e2e2e7d;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 500px;
+}
+
+/* Image preview container */
+#imagePreviewContainer {
+    text-align: center;
+}
+
+#imagePreview {
+    display: none;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(98, 98, 98, 0.1);
+}
+
+/* Flexbox for translated text and speak button */
+.translated-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Style for the icon button */
+#speakTranslatedTextButton {
+    display: flex;
+    margin: auto auto;
+    padding: 20px 10px;
+    background-color: #2e2e2e7d;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    transition: background-color 0.3s ease;
+} 
+
+#speakTranslatedTextButton:hover {
+    background-color: #717171;
+}
+
+#speakTranslatedTextButton i {
+    font-size: 20px;
+}
+
+/* Ensuring responsiveness */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    #targetLanguage {
+        width: 80%;
+    }
+
+    textarea {
+        width: 50%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    pre {
+        font-size: 14px;
+    }
+
+    #speakTranslatedTextButton {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
