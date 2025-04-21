@@ -4,7 +4,7 @@ body {
     color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
-    background-image: url("C:/Users/rohit/Desktop/lang_trans_pt2/bg_img.png"); /* Image file in the same folder */
+    background-image: url("bg_img.png"); /* Image file */
     background-size: cover; /* Cover the entire screen */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* No repeating */
